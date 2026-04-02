@@ -5,7 +5,7 @@ public class InteractableObj : MonoBehaviour, IInteractable
     //private bool canPick = true;
     [SerializeField] GameObject target;
     public float throwforce = 5f;
-    
+
 
 
     public void Interact()
@@ -22,6 +22,14 @@ public class InteractableObj : MonoBehaviour, IInteractable
         this.transform.parent = null;
         this.GetComponent<Rigidbody>().isKinematic = false;
         //canPick = true;
-        this.GetComponent<Rigidbody>().AddForce(transform.forward * throwforce, ForceMode.Impulse);
+        //this.transform.localEulerAngles = new Vector3(0, 0, 0);
+        //this.GetComponent<Rigidbody>().AddForce(transform.forward * throwforce, ForceMode.Impulse);
+        //this.GetComponent<Rigidbody>().AddForce(-transform.right * 1f, ForceMode.Impulse);
+    }
+
+    public void Open()
+    {
+        
+        //throw new System.NotImplementedException();
     }
 }

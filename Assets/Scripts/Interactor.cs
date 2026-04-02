@@ -6,6 +6,8 @@ interface IInteractable
 {
     public void Interact();
     public void Drop();
+
+    public void Open();
 }
 
 public class Interactor : MonoBehaviour
@@ -15,6 +17,7 @@ public class Interactor : MonoBehaviour
 
     public Transform InteractorSource;
     public float InteractRange;
+    public GameObject hand;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -33,17 +36,32 @@ public class Interactor : MonoBehaviour
                 Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
                 if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange))
                 {
-                    if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
+                    if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj) && hitInfo.collider.gameObject.tag == "key")
                     {
                         interactObj.Interact();
                         lastInteractObj = interactObj;
+                        canPick = false;
                     }
                 }
-                canPick = false;
+                
             }
             else if (canPick == false)
             {
-                if (lastInteractObj != null)
+                Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
+                if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange))
+                {
+                    if (hitInfo.collider.gameObject.tag == "lock")
+                    {
+                        Debug.Log("open");
+                        Destroy(hand.transform.GetChild(0).gameObject);
+                        canPick = true;
+                    }
+                }
+
+
+
+
+                else if (lastInteractObj != null)
                 {
                     lastInteractObj.Drop();
                     lastInteractObj = null;
