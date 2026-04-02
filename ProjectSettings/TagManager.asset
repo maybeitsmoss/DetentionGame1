@@ -6,6 +6,9 @@ TagManager:
   tags:
   - key
   - lock
+  - ground
+  - Chair
+  - Desk
   layers:
   - Default
   - TransparentFX
