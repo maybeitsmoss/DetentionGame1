@@ -59,6 +59,12 @@ public class CabinetDoorManager : MonoBehaviour
         }
     }
 
+
+    public void SetOpenDoor()
+    {
+        OpenDoorOnly = true;
+
+    }
     
     void OpenCloseDoor() {
         if (!CloseDoor)

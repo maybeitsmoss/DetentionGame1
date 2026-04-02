@@ -68,8 +68,8 @@ public class Interactor : MonoBehaviour
                         {
                             Debug.Log("open");
 
-                            hitInfo.collider.gameObject.SendMessage("OnUnlock");
-                            //hitInfo.collider.gameObject.GetComponent<database>().OnUnlockEvent.Invoke();
+                            //hitInfo.collider.gameObject.SendMessage("OnUnlock");
+                            hitInfo.collider.gameObject.GetComponent<database>().OnUnlockEvent.Invoke();
 
                             Destroy(hand.transform.GetChild(0).gameObject);
                             canPick = true;

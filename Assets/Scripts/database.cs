@@ -5,5 +5,5 @@ public class database : MonoBehaviour
 {
     public UnlockableObjects objectType;
 
-    //public UnityEvent OnUnlockEvent;
+    public UnityEvent OnUnlockEvent;
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SliddingDoorDrawersManager : MonoBehaviour
 {
+    
 
     [Header("Door Opening & Closing Speed\n")]
     [Range(0f, 100f)] public float DoorSpeedPercentage;
@@ -32,6 +33,11 @@ public class SliddingDoorDrawersManager : MonoBehaviour
 
     float PrimaryDoorXAxis;
     float SecondaryDoorXAxis;
+
+    private void Awake()
+    {
+        OpenClosePrimaryDoor = false;   
+    }
 
     // Update is called once per frame
     void Update()
@@ -63,6 +69,10 @@ public class SliddingDoorDrawersManager : MonoBehaviour
         }
     }
 
+    public void SetOpenDoor()
+    {
+        OpenPrimaryDoor = true;
+    }
 
     void OpeningPrimaryDoor() {
         if (PrimaryDoorXAxis > -DoorOpeningDistance)
