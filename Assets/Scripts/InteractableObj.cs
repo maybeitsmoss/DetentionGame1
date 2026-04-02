@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class InteractableObj : MonoBehaviour, IInteractable
+public class InteractableObj : MonoBehaviour
 {
     //private bool canPick = true;
     [SerializeField] GameObject target;
-    public float throwforce = 5f;
+    //public float throwforce = 5f;
 
 
 

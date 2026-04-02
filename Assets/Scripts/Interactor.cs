@@ -2,22 +2,24 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-interface IInteractable
+/*interface IInteractable
 {
     public void Interact();
     public void Drop();
 
     public void Open();
-}
+}*/
 
 public class Interactor : MonoBehaviour
 {
     private bool canPick = true;
-    private IInteractable lastInteractObj = null;
+    //private IInteractable lastInteractObj = null;
 
     public Transform InteractorSource;
     public float InteractRange;
     public GameObject hand;
+
+    public GameObject lastObjectPicked;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,8 +28,58 @@ public class Interactor : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (canPick == true)
+            {
+                if(Physics.Raycast(InteractorSource.position, InteractorSource.forward, out RaycastHit hitInfo, InteractRange))
+                {
+                    if(hitInfo.collider.gameObject.tag == "key" && hitInfo.collider.gameObject != null)
+                    {
+                        if (hitInfo.collider.gameObject.GetComponent<keyObj>() != null)
+                        {
+                            hitInfo.collider.gameObject.GetComponent<keyObj>().Interact();
+                            lastObjectPicked = hitInfo.collider.gameObject;
+                            canPick = false;
+                        }
+                    }
+                }
+                
+                
+
+            }
+
+            else if (canPick == false)
+            {
+                if (Physics.Raycast(InteractorSource.position, InteractorSource.forward, out RaycastHit hitInfo, InteractRange))
+                {
+                    if (hitInfo.collider.gameObject.tag == "lock" && hitInfo.collider.gameObject != null)
+                    {
+                        Debug.Log("open");
+                        Destroy(hand.transform.GetChild(0).gameObject);
+                        canPick = true;
+                    }
+                }
+                else
+                {
+                    if (lastObjectPicked != null)
+                    {
+                        lastObjectPicked.GetComponent<keyObj>().Drop();
+                        lastObjectPicked = null;
+                        canPick = true;
+                    }
+                }
+                
+                
+            }
+        }
+    }
+
+
+    // Update is called once per frame
+    /*void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -69,5 +121,5 @@ public class Interactor : MonoBehaviour
                 canPick = true;
             }
         }
-    }
+    }*/
 }
