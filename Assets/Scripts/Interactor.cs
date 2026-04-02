@@ -21,6 +21,8 @@ public class Interactor : MonoBehaviour
 
     public GameObject lastObjectPicked;
 
+    private GameObject lastLooked;
+
     private UnlockableObjects currentKeyType;
 
 
@@ -99,6 +101,54 @@ public class Interactor : MonoBehaviour
                 
                 
             }
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (Physics.Raycast(InteractorSource.position, InteractorSource.forward, out RaycastHit hitInfo, InteractRange))
+        {
+            if(hitInfo.collider.gameObject.tag == "key" || hitInfo.collider.gameObject.tag == "lock")
+            {
+                if(lastLooked != null)
+                {
+                    lastLooked.GetComponent<Outline>().enabled = false;
+                    //lastHit = null;
+                    lastLooked = null;
+
+                    hitInfo.collider.gameObject.GetComponent<Outline>().enabled = true;
+                    //GameObject lastHit = hitInfo.collider.gameObject;
+                    lastLooked = hitInfo.collider.gameObject;
+                }
+                else
+                {
+                    hitInfo.collider.gameObject.GetComponent<Outline>().enabled = true;
+                    //GameObject lastHit = hitInfo.collider.gameObject;
+                    lastLooked = hitInfo.collider.gameObject;
+                }
+                
+            }
+            else
+            {
+                if (lastLooked != null)
+                {
+                    lastLooked.GetComponent<Outline>().enabled = false;
+                    //lastHit = null;
+                    lastLooked = null;
+                }
+                
+                
+            }
+
+        }
+        else
+        {
+            if (lastLooked != null)
+                {
+                    lastLooked.GetComponent<Outline>().enabled = false;
+                    //lastHit = null;
+                    lastLooked = null;
+                }
         }
     }
 
