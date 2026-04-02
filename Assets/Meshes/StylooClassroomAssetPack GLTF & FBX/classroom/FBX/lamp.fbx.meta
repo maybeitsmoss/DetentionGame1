@@ -3,7 +3,22 @@ guid: 8a47536be5ae60a42bc91b683b7d3ed2
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emissionwhite
+    second: {fileID: 2100000, guid: 5906e61c0ce1b47489df80b76b1d52c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: normal_
+    second: {fileID: 2100000, guid: beb3615d2704241408f38098777387fb, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ImphenziaPalette01-256-Gradient
+    second: {fileID: 2800000, guid: 155b3cb179c4ee04597432edfe546a54, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

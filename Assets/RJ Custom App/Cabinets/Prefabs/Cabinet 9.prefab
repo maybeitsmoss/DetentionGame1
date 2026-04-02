@@ -1,0 +1,1107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &782324919589426783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1143720829544690774}
+  - component: {fileID: 3905079919402724168}
+  - component: {fileID: 5920228692182377975}
+  - component: {fileID: 4691160378685547010}
+  m_Layer: 0
+  m_Name: Cabinet 9 Door 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1143720829544690774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782324919589426783}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000021855696, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.2730215, y: 4.9522753, z: 1.9860414}
+  m_LocalScale: {x: 6.1321726, y: 6.1321726, z: 6.1321726}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4549966105239055364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3905079919402724168
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782324919589426783}
+  m_Mesh: {fileID: 5577471753460901971, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+--- !u!23 &5920228692182377975
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782324919589426783}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 1493370413022115818, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -5254752162498044798, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -876546973899608171, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -8274133419916619345, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -3522955778539423533, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: 9185737683893222716, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -6087771358165109452, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4691160378685547010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782324919589426783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c39f8793ce91e94989381434d51078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoorOpeningAngle: 1
+  DoorSpeedPercentage: 100
+  OpenAndCloseDoor: 1
+  DoorWaitTime: 2
+  OpenDoorOnly: 0
+  CloseDoorOnly: 0
+  Door: {fileID: 0}
+--- !u!1 &920783502651084651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5923450448386315314}
+  - component: {fileID: 4250765746825110863}
+  - component: {fileID: 3042796092210573277}
+  - component: {fileID: 8936866334404980870}
+  m_Layer: 0
+  m_Name: Cabinet 9 Door 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5923450448386315314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920783502651084651}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000021855696, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.0560093, y: 1.0530266, z: 1.9860414}
+  m_LocalScale: {x: 6.1321726, y: 6.1321726, z: 6.1321726}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4549966105239055364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4250765746825110863
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920783502651084651}
+  m_Mesh: {fileID: -2633182202560349619, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+--- !u!23 &3042796092210573277
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920783502651084651}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 1493370413022115818, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -5254752162498044798, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -876546973899608171, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -8274133419916619345, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -3522955778539423533, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: 9185737683893222716, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -6087771358165109452, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8936866334404980870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920783502651084651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c39f8793ce91e94989381434d51078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoorOpeningAngle: 1
+  DoorSpeedPercentage: 100
+  OpenAndCloseDoor: 1
+  DoorWaitTime: 2
+  OpenDoorOnly: 0
+  CloseDoorOnly: 0
+  Door: {fileID: 0}
+--- !u!1 &1444366043206925610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7289011687583969090}
+  - component: {fileID: 2126498581655628998}
+  - component: {fileID: 2712430654124449862}
+  - component: {fileID: 2001716129106397972}
+  m_Layer: 0
+  m_Name: Cabinet 9 Door 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7289011687583969090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444366043206925610}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000021855696, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.5172482, y: 1.0530266, z: 1.9860414}
+  m_LocalScale: {x: 6.1321726, y: 6.1321726, z: 6.1321726}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4549966105239055364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2126498581655628998
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444366043206925610}
+  m_Mesh: {fileID: -4600001421194675562, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+--- !u!23 &2712430654124449862
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444366043206925610}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 1493370413022115818, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -5254752162498044798, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -876546973899608171, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -8274133419916619345, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -3522955778539423533, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: 9185737683893222716, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -6087771358165109452, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2001716129106397972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444366043206925610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c39f8793ce91e94989381434d51078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoorOpeningAngle: 1
+  DoorSpeedPercentage: 100
+  OpenAndCloseDoor: 1
+  DoorWaitTime: 2
+  OpenDoorOnly: 0
+  CloseDoorOnly: 0
+  Door: {fileID: 0}
+--- !u!1 &1539542656381731541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4549966105239055364}
+  m_Layer: 0
+  m_Name: Cabinet 9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4549966105239055364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539542656381731541}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1280525031426469835}
+  - {fileID: 76032852918170557}
+  - {fileID: 1143720829544690774}
+  - {fileID: 6240322153687452492}
+  - {fileID: 7289011687583969090}
+  - {fileID: 5642210107576016068}
+  - {fileID: 5923450448386315314}
+  - {fileID: 4512432511157713187}
+  - {fileID: 4794475256093179034}
+  - {fileID: 5539193747870674155}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1760115047663725848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4512432511157713187}
+  - component: {fileID: 8474923150324298290}
+  - component: {fileID: 4936287891700792765}
+  - component: {fileID: 549500643528905928}
+  m_Layer: 0
+  m_Name: Cabinet 9 Door 7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4512432511157713187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760115047663725848}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000021855696, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.5172482, y: -2.9192362, z: 1.9860412}
+  m_LocalScale: {x: 6.1321726, y: 6.1321726, z: 6.1321726}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4549966105239055364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8474923150324298290
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760115047663725848}
+  m_Mesh: {fileID: 1741596732645157925, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+--- !u!23 &4936287891700792765
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760115047663725848}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 1493370413022115818, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -5254752162498044798, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -876546973899608171, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -8274133419916619345, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -3522955778539423533, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: 9185737683893222716, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -6087771358165109452, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &549500643528905928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760115047663725848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c39f8793ce91e94989381434d51078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoorOpeningAngle: 1
+  DoorSpeedPercentage: 100
+  OpenAndCloseDoor: 1
+  DoorWaitTime: 2
+  OpenDoorOnly: 0
+  CloseDoorOnly: 0
+  Door: {fileID: 0}
+--- !u!1 &1953672905358023156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1280525031426469835}
+  - component: {fileID: 3851585323188379410}
+  - component: {fileID: 6452459247732720754}
+  m_Layer: 0
+  m_Name: Cabinet 9 Base
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1280525031426469835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953672905358023156}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 379.25055, y: 379.25052, z: 379.25052}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4549966105239055364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3851585323188379410
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953672905358023156}
+  m_Mesh: {fileID: -2433516483139957208, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+--- !u!23 &6452459247732720754
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953672905358023156}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 6699446615349125189, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &5100001463629571329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5642210107576016068}
+  - component: {fileID: 782332684652330969}
+  - component: {fileID: 2579045050646772366}
+  - component: {fileID: 8554104838716440575}
+  m_Layer: 0
+  m_Name: Cabinet 9 Door 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5642210107576016068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5100001463629571329}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000021855696, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.2730252, y: 1.0530266, z: 1.9860414}
+  m_LocalScale: {x: 6.1321726, y: 6.1321726, z: 6.1321726}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4549966105239055364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &782332684652330969
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5100001463629571329}
+  m_Mesh: {fileID: 2867563351794729172, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+--- !u!23 &2579045050646772366
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5100001463629571329}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 1493370413022115818, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -5254752162498044798, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -876546973899608171, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -8274133419916619345, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -3522955778539423533, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: 9185737683893222716, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -6087771358165109452, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8554104838716440575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5100001463629571329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c39f8793ce91e94989381434d51078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoorOpeningAngle: 1
+  DoorSpeedPercentage: 100
+  OpenAndCloseDoor: 1
+  DoorWaitTime: 2
+  OpenDoorOnly: 0
+  CloseDoorOnly: 0
+  Door: {fileID: 0}
+--- !u!1 &5229514264788608510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4794475256093179034}
+  - component: {fileID: 298537970193855516}
+  - component: {fileID: 5255865956977152533}
+  - component: {fileID: 1747628337473792950}
+  m_Layer: 0
+  m_Name: Cabinet 9 Door 8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4794475256093179034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5229514264788608510}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000021855696, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.2730252, y: -2.9192362, z: 1.9860412}
+  m_LocalScale: {x: 6.1321726, y: 6.1321726, z: 6.1321726}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4549966105239055364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &298537970193855516
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5229514264788608510}
+  m_Mesh: {fileID: 1757772118155613079, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+--- !u!23 &5255865956977152533
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5229514264788608510}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 1493370413022115818, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -5254752162498044798, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -876546973899608171, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -8274133419916619345, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -3522955778539423533, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: 9185737683893222716, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -6087771358165109452, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1747628337473792950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5229514264788608510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c39f8793ce91e94989381434d51078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoorOpeningAngle: 1
+  DoorSpeedPercentage: 100
+  OpenAndCloseDoor: 1
+  DoorWaitTime: 2
+  OpenDoorOnly: 0
+  CloseDoorOnly: 0
+  Door: {fileID: 0}
+--- !u!1 &7099081645282854619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5539193747870674155}
+  - component: {fileID: 7612162618756113443}
+  - component: {fileID: 3046510682625131204}
+  - component: {fileID: 6139967989254319331}
+  m_Layer: 0
+  m_Name: Cabinet 9 Door 9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5539193747870674155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7099081645282854619}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000021855696, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.0560093, y: -2.9192362, z: 1.9860412}
+  m_LocalScale: {x: 6.1321726, y: 6.1321726, z: 6.1321726}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4549966105239055364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7612162618756113443
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7099081645282854619}
+  m_Mesh: {fileID: -7337885408753521354, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+--- !u!23 &3046510682625131204
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7099081645282854619}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 1493370413022115818, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -5254752162498044798, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -876546973899608171, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -8274133419916619345, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -3522955778539423533, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: 9185737683893222716, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -6087771358165109452, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6139967989254319331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7099081645282854619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c39f8793ce91e94989381434d51078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoorOpeningAngle: 1
+  DoorSpeedPercentage: 100
+  OpenAndCloseDoor: 1
+  DoorWaitTime: 2
+  OpenDoorOnly: 0
+  CloseDoorOnly: 0
+  Door: {fileID: 0}
+--- !u!1 &7292121120221313789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 76032852918170557}
+  - component: {fileID: 7403687389024406924}
+  - component: {fileID: 4887233954324389183}
+  - component: {fileID: 6550722544227769102}
+  m_Layer: 0
+  m_Name: Cabinet 9 Door 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &76032852918170557
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7292121120221313789}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000021855696, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.5172482, y: 4.9522753, z: 1.9860414}
+  m_LocalScale: {x: 6.1321726, y: 6.1321726, z: 6.1321726}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4549966105239055364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7403687389024406924
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7292121120221313789}
+  m_Mesh: {fileID: 580681027641394944, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+--- !u!23 &4887233954324389183
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7292121120221313789}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 1493370413022115818, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -5254752162498044798, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -876546973899608171, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -8274133419916619345, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -3522955778539423533, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: 9185737683893222716, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -6087771358165109452, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6550722544227769102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7292121120221313789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c39f8793ce91e94989381434d51078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoorOpeningAngle: 1
+  DoorSpeedPercentage: 100
+  OpenAndCloseDoor: 1
+  DoorWaitTime: 2
+  OpenDoorOnly: 0
+  CloseDoorOnly: 0
+  Door: {fileID: 0}
+--- !u!1 &7370318072581690527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6240322153687452492}
+  - component: {fileID: 389737153198459070}
+  - component: {fileID: 4227157936936045901}
+  - component: {fileID: 674919971504708302}
+  m_Layer: 0
+  m_Name: Cabinet 9 Door 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6240322153687452492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7370318072581690527}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000021855696, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.056006, y: 4.9522753, z: 1.9860414}
+  m_LocalScale: {x: 6.1321726, y: 6.1321726, z: 6.1321726}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4549966105239055364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &389737153198459070
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7370318072581690527}
+  m_Mesh: {fileID: -9155078948554355351, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+--- !u!23 &4227157936936045901
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7370318072581690527}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 1493370413022115818, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -5254752162498044798, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -876546973899608171, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -8274133419916619345, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -3522955778539423533, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: 9185737683893222716, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  - {fileID: -6087771358165109452, guid: 0ae6b16b3bed16f4b8f4c8320e4181b3, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &674919971504708302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7370318072581690527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c39f8793ce91e94989381434d51078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoorOpeningAngle: 1
+  DoorSpeedPercentage: 100
+  OpenAndCloseDoor: 1
+  DoorWaitTime: 2
+  OpenDoorOnly: 0
+  CloseDoorOnly: 0
+  Door: {fileID: 0}

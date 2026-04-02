@@ -21,11 +21,13 @@ public class Interactor : MonoBehaviour
 
     public GameObject lastObjectPicked;
 
+    private UnlockableObjects currentKeyType;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        currentKeyType = UnlockableObjects.none;
     }
 
     void Update()
@@ -41,7 +43,11 @@ public class Interactor : MonoBehaviour
                         if (hitInfo.collider.gameObject.GetComponent<keyObj>() != null)
                         {
                             hitInfo.collider.gameObject.GetComponent<keyObj>().Interact();
+                            
+                            
                             lastObjectPicked = hitInfo.collider.gameObject;
+                            currentKeyType = lastObjectPicked.GetComponent<keyObj>().keyType;
+
                             canPick = false;
                         }
                     }
@@ -57,9 +63,27 @@ public class Interactor : MonoBehaviour
                 {
                     if (hitInfo.collider.gameObject.tag == "lock" && hitInfo.collider.gameObject != null)
                     {
-                        Debug.Log("open");
-                        Destroy(hand.transform.GetChild(0).gameObject);
-                        canPick = true;
+                        var keyTypeNeeded = hitInfo.collider.gameObject.GetComponent<database>().objectType;
+                        if (keyTypeNeeded == currentKeyType)
+                        {
+                            Debug.Log("open");
+
+                            hitInfo.collider.gameObject.SendMessage("OnUnlock");
+                            //hitInfo.collider.gameObject.GetComponent<database>().OnUnlockEvent.Invoke();
+
+                            Destroy(hand.transform.GetChild(0).gameObject);
+                            canPick = true;
+                            lastObjectPicked = null;
+                            currentKeyType = UnlockableObjects.none;
+                        }
+                        else
+                        {
+                            //incorrect!!
+                            Debug.Log("mismatch");
+                        }
+
+
+                        
                     }
                 }
                 else
@@ -68,6 +92,7 @@ public class Interactor : MonoBehaviour
                     {
                         lastObjectPicked.GetComponent<keyObj>().Drop();
                         lastObjectPicked = null;
+                        currentKeyType = UnlockableObjects.none;
                         canPick = true;
                     }
                 }

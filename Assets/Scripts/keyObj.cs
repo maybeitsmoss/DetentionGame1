@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class keyObj : MonoBehaviour
 {
+    public UnlockableObjects keyType;
 
     public GameObject target;
 
@@ -20,4 +21,9 @@ public class keyObj : MonoBehaviour
     }
 
 
+}
+
+public enum UnlockableObjects
+{
+    door, drawer1, drawer2, drawer3, drawer4, teachercabinet, supplycabinet, janitorcabinet, laptop, window, vent, toolbox, none
 }
