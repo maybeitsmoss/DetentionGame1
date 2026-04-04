@@ -24,7 +24,7 @@ public class Laptop : MonoBehaviour
 
     void Start()
     {
-        //Keypad.SetActive(false);
+        Keypad.SetActive(false);
         LaptopCamera.enabled = false;
         //Keypad.GetComponent<Keypad>().enabled = false;
     }
@@ -37,7 +37,7 @@ public class Laptop : MonoBehaviour
         LaptopCamera.enabled = true;
         //mainCam.enabled = false;
 
-        //Keypad.SetActive(true);
+        Keypad.SetActive(true);
         crossHair.SetActive(false);
 
 

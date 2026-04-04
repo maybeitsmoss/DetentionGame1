@@ -49,6 +49,8 @@ public class Interactor : MonoBehaviour
                         {
                             hitInfo.collider.gameObject.GetComponent<keyObj>().Interact();
                             
+                            //hitInfo.collider.gameObject.GetComponent<Collider>().enabled = false;
+                            
                             
                             lastObjectPicked = hitInfo.collider.gameObject;
                             currentKeyType = lastObjectPicked.GetComponent<keyObj>().keyType;

@@ -9,13 +9,14 @@ public class Keypad : MonoBehaviour
    [SerializeField] private TextMeshProUGUI Ans;
 
    private string Answer = "6967";
+
+   public GameObject drawer;
    //make string public after testing + add a randomizer
 
 
     void Start()
     {
-        //keypad canvas UI is disabled 
-        //call the function onUnlock
+        
     }
 
     public void Number(int number)
@@ -31,7 +32,7 @@ public class Keypad : MonoBehaviour
         if (Ans.text == Answer)
         {
            Ans.text = "UNLOCKED"; 
-           //call unlock function here
+           drawer.GetComponent<drawers>().drawer2open();
         }
         else
         {
@@ -42,7 +43,7 @@ public class Keypad : MonoBehaviour
 
     public IEnumerator KeypadReset()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         Ans.text = "";
     }
 }
