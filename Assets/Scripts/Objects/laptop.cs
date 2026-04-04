@@ -35,7 +35,7 @@ public class Laptop : MonoBehaviour
         Debug.Log("unlocked!!");
 
         LaptopCamera.enabled = true;
-        mainCam.enabled = false;
+        //mainCam.enabled = false;
 
         //Keypad.SetActive(true);
         crossHair.SetActive(false);
@@ -60,7 +60,7 @@ public class Laptop : MonoBehaviour
 
             //laptopOn = false;
             LaptopCamera.enabled = false;
-            mainCam.enabled = true;
+            //mainCam.enabled = true;
 
             crossHair.SetActive(true);
 
