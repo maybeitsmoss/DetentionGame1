@@ -8,12 +8,25 @@ public class keyObj : MonoBehaviour
 
     public void Interact()
     {
-        transform.position = target.transform.position;
-        this.transform.parent = target.transform;
-        this.transform.localEulerAngles = new Vector3(0, 0, 0);
+        if (this.name == "gun")
+        {
+            transform.position = target.transform.position;
+            this.transform.parent = target.transform;
+            this.transform.localEulerAngles = new Vector3(270, 90, 90);
 
-        this.GetComponent<Collider>().enabled = false;
-        this.GetComponent<Rigidbody>().isKinematic = true;
+            this.GetComponent<Collider>().enabled = false;
+            this.GetComponent<Rigidbody>().isKinematic = true;
+        }
+        else
+        {
+            transform.position = target.transform.position;
+            this.transform.parent = target.transform;
+            this.transform.localEulerAngles = new Vector3(0, 0, 0);
+
+            this.GetComponent<Collider>().enabled = false;
+            this.GetComponent<Rigidbody>().isKinematic = true;
+        }
+        
         //this.GetComponent<Rigidbody>().SetActive(false);
     }
 

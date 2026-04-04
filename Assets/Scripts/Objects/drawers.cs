@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class drawers : MonoBehaviour
 {
@@ -7,10 +9,21 @@ public class drawers : MonoBehaviour
     public GameObject drawer3;
     public GameObject drawer4;
 
+    public GameObject usb;
+    public GameObject gun;
+
     /*private bool open1 = false;
     private bool open2 = false;
     private bool open3 = false;
     private bool open4 = false;*/
+
+    public void Start()
+    {
+        usb.GetComponent<Rigidbody>().isKinematic = true;
+        gun.GetComponent<Rigidbody>().isKinematic = true;
+        usb.SetActive(false);
+        gun.SetActive(false);
+    }
 
     public void OnUnlock()
     {
@@ -39,7 +52,16 @@ public class drawers : MonoBehaviour
         }
 
         GetComponent<Animator>().SetTrigger("open");
+        StartCoroutine(showUsb());
+
         //open1 = true;
+    }
+
+    IEnumerator showUsb()
+    {
+        yield return new WaitForSeconds(0.75f);
+        usb.SetActive(true);
+        usb.GetComponent<Rigidbody>().isKinematic = false;
     }
 
     public void drawer2open()
@@ -61,7 +83,16 @@ public class drawers : MonoBehaviour
         }
 
         GetComponent<Animator>().SetTrigger("drawer2open");
+        StartCoroutine(showGun());
         //open2 = true;
+    }
+
+    IEnumerator showGun()
+    {
+        yield return new WaitForSeconds(0.75f);
+
+        gun.SetActive(true);
+        gun.GetComponent<Rigidbody>().isKinematic = false;
     }
 
     public void drawer3open()
