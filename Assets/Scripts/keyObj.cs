@@ -35,6 +35,11 @@ public class keyObj : MonoBehaviour
         this.transform.parent = null;
         this.GetComponent<Collider>().enabled = true;
         this.GetComponent<Rigidbody>().isKinematic = false;
+
+        if (this.name == "ball")
+        {
+            this.GetComponent<Rigidbody>().AddForce(transform.forward * 20f, ForceMode.Impulse);
+        }
         //this.GetComponent<Rigidbody>().SetActive(true);
     }
 

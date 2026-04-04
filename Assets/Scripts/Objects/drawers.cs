@@ -11,6 +11,7 @@ public class drawers : MonoBehaviour
 
     public GameObject usb;
     public GameObject gun;
+    public GameObject doorKey;
 
     /*private bool open1 = false;
     private bool open2 = false;
@@ -21,8 +22,10 @@ public class drawers : MonoBehaviour
     {
         usb.GetComponent<Rigidbody>().isKinematic = true;
         gun.GetComponent<Rigidbody>().isKinematic = true;
+        doorKey.GetComponent<Rigidbody>().isKinematic = true;
         usb.SetActive(false);
         gun.SetActive(false);
+        doorKey.SetActive(false);
     }
 
     public void OnUnlock()
@@ -114,7 +117,16 @@ public class drawers : MonoBehaviour
         }
 
         GetComponent<Animator>().SetTrigger("drawer3open");
+        StartCoroutine(showDoorKey());
         //open3 = true;
+    }
+
+    IEnumerator showDoorKey()
+    {
+        yield return new WaitForSeconds(0.75f);
+
+        doorKey.SetActive(true);
+        doorKey.GetComponent<Rigidbody>().isKinematic = false;
     }
 
     public void drawer4open()

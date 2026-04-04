@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 15024684ed127764eb7705fe2407fdf1
+guid: b64447d26e815b646b4e333712d39163
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: normal_
-    second: {fileID: 2100000, guid: f8d60cc21fd4ef344bf1da09325e3061, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: ImphenziaPalette01-256-Gradient
-    second: {fileID: 2800000, guid: ae911ee623a0af44caab9412ae1fc39c, type: 3}
+      name: Mat_Pro_Colored Metal
+    second: {fileID: 2100000, guid: 4df60f6b85ede474bbc534368607724c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
