@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
+    public bool canMove = true;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -26,13 +28,21 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        PlayerInput();
+        if (canMove)
+        {
+            PlayerInput();
+        }
+        //PlayerInput();
         rb.linearDamping = drag;
     }
 
     private void FixedUpdate()
     {
-        MovePlayer();
+        if (canMove)
+        {
+            MovePlayer();
+        }
+        
     }
 
     private void PlayerInput()

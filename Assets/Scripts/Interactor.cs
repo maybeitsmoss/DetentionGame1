@@ -25,6 +25,9 @@ public class Interactor : MonoBehaviour
 
     private UnlockableObjects currentKeyType;
 
+    public GameObject laptop;
+    public bool allowInteract = true;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,7 +37,7 @@ public class Interactor : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && allowInteract == true)
         {
             if (canPick == true)
             {
@@ -101,7 +104,16 @@ public class Interactor : MonoBehaviour
                 
                 
             }
+            if (Physics.Raycast(InteractorSource.position, InteractorSource.forward, out RaycastHit hitInfo1, InteractRange))
+                {
+                    if (hitInfo1.collider.gameObject.name == "laptopOBJ" && laptop.GetComponent<Laptop>().laptopOn == true)
+                    {
+                        hitInfo1.collider.gameObject.GetComponent<database>().OnUnlockEvent.Invoke();
+                    }
+                }
+            
         }
+        
     }
 
     void FixedUpdate()
