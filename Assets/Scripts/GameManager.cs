@@ -171,6 +171,6 @@ public class GameManager : MonoBehaviour
 
     public void MainMenu()
     {
-        
+        SceneManager.LoadScene("TITLE 1");
     }
 }
