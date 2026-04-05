@@ -55,6 +55,12 @@ public class Interactor : MonoBehaviour
                             lastObjectPicked = hitInfo.collider.gameObject;
                             currentKeyType = lastObjectPicked.GetComponent<keyObj>().keyType;
 
+                            if (hitInfo.collider.gameObject.name == "gun")
+                            {
+                                AudioSource gunSFX = hitInfo.collider.gameObject.GetComponent<AudioSource>();
+                                gunSFX.Play();
+                            }
+
                             canPick = false;
                         }
                     }

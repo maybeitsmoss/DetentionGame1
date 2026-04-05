@@ -33,6 +33,8 @@ public class CabinetDoorManager : MonoBehaviour
     float DoorangleY;
     float DoorangleZ;
 
+    public AudioSource cabinetDoorOpen;
+
     private void Start()
     {
         //Will Make Door Object This if Game Object Is Null
@@ -62,6 +64,11 @@ public class CabinetDoorManager : MonoBehaviour
 
     public void SetOpenDoor()
     {
+        if (!cabinetDoorOpen.isPlaying)
+        {
+            cabinetDoorOpen.Play();
+        }
+        
         OpenDoorOnly = true;
 
     }
