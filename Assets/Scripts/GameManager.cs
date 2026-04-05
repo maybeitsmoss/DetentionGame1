@@ -15,6 +15,18 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI endText;
     public Button mainMenu;
     public Button retry;
+
+    public Canvas fadeIn;
+
+
+    public Canvas gameWin;
+    public TextMeshProUGUI timerReport;
+    public TextMeshProUGUI escapeReport;
+
+
+    public AudioSource windowShot;
+    public AudioSource doorOpen;
+    public AudioSource ventOpen;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Start()
@@ -28,6 +40,7 @@ public class GameManager : MonoBehaviour
         endText.enabled = false;
         mainMenu.gameObject.SetActive(false);
         retry.gameObject.SetActive(false);
+        gameWin.enabled = false;
 
         StartCoroutine(startGame());
     }
@@ -62,6 +75,7 @@ public class GameManager : MonoBehaviour
         mainCam.GetComponent<Interactor>().allowInteract = true;
         mainCam.GetComponent<PlayerCam>().canLook = true;
         timer.timerStart = true;
+        fadeIn.enabled = false;
     }
 
     public void Lose()
@@ -70,6 +84,59 @@ public class GameManager : MonoBehaviour
         mainCam.GetComponent<Interactor>().allowInteract = false;
         mainCam.GetComponent<PlayerCam>().canLook = false;
         timer.timerStart = false;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    public void doorWin()
+    {
+        playerMover.GetComponent<PlayerMovement>().canMove = false;
+        mainCam.GetComponent<Interactor>().allowInteract = false;
+        mainCam.GetComponent<PlayerCam>().canLook = false;
+        timer.timerStart = false;
+
+        doorOpen.Play();
+        gameWin.enabled = true;
+        timerReport.text = "IN " + (60 - Mathf.FloorToInt(timer.timeRemaining)) + " SECONDS";
+        escapeReport.text = "DOOR";
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+
+    }
+
+    public void ventWin()
+    {
+        playerMover.GetComponent<PlayerMovement>().canMove = false;
+        mainCam.GetComponent<Interactor>().allowInteract = false;
+        mainCam.GetComponent<PlayerCam>().canLook = false;
+        timer.timerStart = false;
+
+        ventOpen.Play();
+        gameWin.enabled = true;
+        timerReport.text = "IN " + (60 - Mathf.FloorToInt(timer.timeRemaining)) + " SECONDS";
+        escapeReport.text = "VENT";
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    public void windowWin()
+    {
+        playerMover.GetComponent<PlayerMovement>().canMove = false;
+        mainCam.GetComponent<Interactor>().allowInteract = false;
+        mainCam.GetComponent<PlayerCam>().canLook = false;
+        timer.timerStart = false;
+
+        windowShot.Play();
+        gameWin.enabled = true;
+        timerReport.text = "IN " + (60 - Mathf.FloorToInt(timer.timeRemaining)) + " SECONDS";
+        escapeReport.text = "WINDOW";
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void Retry()
