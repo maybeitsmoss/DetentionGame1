@@ -12,6 +12,8 @@ public class SceneHandler : MonoBehaviour
     public Canvas menuCanvas;
 
     public Canvas fader;
+
+    public Image fadeImage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,6 +29,17 @@ public class SceneHandler : MonoBehaviour
 
     public void StartGame()
     {
+        StartCoroutine(LoadGame());
+        //SceneManager.LoadScene("Intro");
+    }
+
+    IEnumerator LoadGame()
+    {
+        fader.enabled = true;
+        fadeImage.GetComponent<Animator>().SetTrigger("fadeOut");
+
+        yield return new WaitForSeconds(1);
+
         SceneManager.LoadScene("Intro");
     }
 

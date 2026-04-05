@@ -699,7 +699,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 3219ec10dac6f234284138d6a8feed3e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.329
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -796,7 +796,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 9b8f49323f522dc428eafadf0e867edb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.756
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1309,7 +1309,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 3219ec10dac6f234284138d6a8feed3e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.515
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1697,7 +1697,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 3219ec10dac6f234284138d6a8feed3e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.515
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3972,7 +3972,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128791910}
   serializedVersion: 5
-  m_Mass: 10
+  m_Mass: 5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -9511,7 +9511,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368906511}
   serializedVersion: 5
-  m_Mass: 10
+  m_Mass: 5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -11986,7 +11986,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442296213}
   serializedVersion: 5
-  m_Mass: 10
+  m_Mass: 5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -15773,7 +15773,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630998427}
   serializedVersion: 5
-  m_Mass: 10
+  m_Mass: 5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -16140,7 +16140,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 3219ec10dac6f234284138d6a8feed3e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.515
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -18622,7 +18622,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760411928}
   serializedVersion: 5
-  m_Mass: 10
+  m_Mass: 5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -19352,7 +19352,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 3219ec10dac6f234284138d6a8feed3e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.515
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -20702,7 +20702,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: d36cec7bbf7b0104fab4ab9264085b77, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.77
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -24211,7 +24211,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964385529}
   serializedVersion: 5
-  m_Mass: 10
+  m_Mass: 5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -30626,7 +30626,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 3219ec10dac6f234284138d6a8feed3e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.515
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -33047,7 +33047,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: f689a692681517242809b081118862c7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.93
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -36563,7 +36563,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525209298}
   serializedVersion: 5
-  m_Mass: 10
+  m_Mass: 5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -39583,6 +39583,7 @@ MonoBehaviour:
   mainCam: {fileID: 1863394563}
   timer: {fileID: 166919092}
   gameEnd: {fileID: 323212369}
+  laptop: {fileID: 839215604}
   endText: {fileID: 161301373}
   mainMenu: {fileID: 364824616}
   retry: {fileID: 627104227}
@@ -44665,7 +44666,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2003480380}
   serializedVersion: 5
-  m_Mass: 10
+  m_Mass: 5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -45802,7 +45803,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057646592}
   serializedVersion: 5
-  m_Mass: 10
+  m_Mass: 5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -46677,7 +46678,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 9b8f49323f522dc428eafadf0e867edb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.756
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -46774,7 +46775,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 3219ec10dac6f234284138d6a8feed3e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.329
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0

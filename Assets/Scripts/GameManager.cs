@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public Camera mainCam;
     public Timer timer;
     public Canvas gameEnd;
+    public GameObject laptop;
 
     public TextMeshProUGUI endText;
     public Button mainMenu;
@@ -113,6 +114,20 @@ public class GameManager : MonoBehaviour
         mainCam.GetComponent<PlayerCam>().canLook = false;
         timer.timerStart = false;
 
+        AudioSource[] sources = timer.GetComponents<AudioSource>();
+
+        foreach (AudioSource source in sources)
+        {
+            source.Stop();
+        }
+
+        AudioSource[] lapTopSources = laptop.GetComponents<AudioSource>();
+
+        foreach (AudioSource source in lapTopSources)
+        {
+            source.Stop();
+        }
+
         backgroundMusic.Stop();
         doorOpen.Play();
         gameWin.enabled = true;
@@ -134,6 +149,20 @@ public class GameManager : MonoBehaviour
         mainCam.GetComponent<PlayerCam>().canLook = false;
         timer.timerStart = false;
 
+        AudioSource[] sources = timer.GetComponents<AudioSource>();
+
+        foreach (AudioSource source in sources)
+        {
+            source.Stop();
+        }
+
+        AudioSource[] lapTopSources = laptop.GetComponents<AudioSource>();
+
+        foreach (AudioSource source in lapTopSources)
+        {
+            source.Stop();
+        }
+
         backgroundMusic.Stop();
         ventOpen.Play();
         gameWin.enabled = true;
@@ -151,6 +180,20 @@ public class GameManager : MonoBehaviour
         mainCam.GetComponent<Interactor>().allowInteract = false;
         mainCam.GetComponent<PlayerCam>().canLook = false;
         timer.timerStart = false;
+
+        AudioSource[] sources = timer.GetComponents<AudioSource>();
+
+        foreach (AudioSource source in sources)
+        {
+            source.Stop();
+        }
+
+        AudioSource[] lapTopSources = laptop.GetComponents<AudioSource>();
+
+        foreach (AudioSource source in lapTopSources)
+        {
+            source.Stop();
+        }
 
         backgroundMusic.Stop();
         windowShot.Play();
