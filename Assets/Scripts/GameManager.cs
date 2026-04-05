@@ -27,6 +27,12 @@ public class GameManager : MonoBehaviour
     public AudioSource windowShot;
     public AudioSource doorOpen;
     public AudioSource ventOpen;
+    public AudioSource backgroundMusic;
+    //public AudioSource countdown;
+
+    private bool hasLost = false;
+    //public AudioSource footsteps;
+    //private bool isPlayingFootsteps = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Start()
@@ -47,12 +53,17 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (timer.timeRemaining <= 0)
+        
+        if (timer.timeRemaining <= 0 && hasLost == false)
         {
             Lose();
             StartCoroutine(showText());
             gameEnd.enabled = true;
+            hasLost = true;
+            //doorOpen.Play();
         }
+
+        
     }
 
     IEnumerator showText()
@@ -85,8 +96,14 @@ public class GameManager : MonoBehaviour
         mainCam.GetComponent<PlayerCam>().canLook = false;
         timer.timerStart = false;
 
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+
+        backgroundMusic.Stop();
+        doorOpen.Play();
+        
+        //Cursor.lockState = CursorLockMode.None;
+        //Cursor.visible = true;
+
+     
     }
 
     public void doorWin()
@@ -96,6 +113,7 @@ public class GameManager : MonoBehaviour
         mainCam.GetComponent<PlayerCam>().canLook = false;
         timer.timerStart = false;
 
+        backgroundMusic.Stop();
         doorOpen.Play();
         gameWin.enabled = true;
         timerReport.text = "IN " + (60 - Mathf.FloorToInt(timer.timeRemaining)) + " SECONDS";
@@ -103,6 +121,8 @@ public class GameManager : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+      
 
 
     }
@@ -114,6 +134,7 @@ public class GameManager : MonoBehaviour
         mainCam.GetComponent<PlayerCam>().canLook = false;
         timer.timerStart = false;
 
+        backgroundMusic.Stop();
         ventOpen.Play();
         gameWin.enabled = true;
         timerReport.text = "IN " + (60 - Mathf.FloorToInt(timer.timeRemaining)) + " SECONDS";
@@ -121,6 +142,7 @@ public class GameManager : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
     }
 
     public void windowWin()
@@ -130,6 +152,7 @@ public class GameManager : MonoBehaviour
         mainCam.GetComponent<PlayerCam>().canLook = false;
         timer.timerStart = false;
 
+        backgroundMusic.Stop();
         windowShot.Play();
         gameWin.enabled = true;
         timerReport.text = "IN " + (60 - Mathf.FloorToInt(timer.timeRemaining)) + " SECONDS";
@@ -137,11 +160,13 @@ public class GameManager : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        
     }
 
     public void Retry()
     {
-        
+        SceneManager.LoadScene("Intro");
     }
 
     public void MainMenu()

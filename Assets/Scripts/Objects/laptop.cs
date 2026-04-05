@@ -17,7 +17,18 @@ public class Laptop : MonoBehaviour
     public GameObject playerMover;
 
     public  GameObject crossHair;
-    //public GameObject player
+
+    private bool keepTime = false;
+
+    public Timer timer;
+
+    public Canvas timerCanvas;
+    //public float timeCounter = 0f;
+    //public int seconds;
+    public GameObject player;
+
+    public AudioSource footsteps1;
+    public AudioSource countdown1;
 
 
     //public Button exitButton;
@@ -26,6 +37,8 @@ public class Laptop : MonoBehaviour
     {
         Keypad.SetActive(false);
         LaptopCamera.enabled = false;
+
+        //timerCanvas.worldCamera = mainCam;
         //Keypad.GetComponent<Keypad>().enabled = false;
     }
 
@@ -35,6 +48,8 @@ public class Laptop : MonoBehaviour
         Debug.Log("unlocked!!");
 
         LaptopCamera.enabled = true;
+        //mainCam.enabled = false;
+        //timerCanvas.worldCamera = LaptopCamera;
         //mainCam.enabled = false;
 
         Keypad.SetActive(true);
@@ -47,6 +62,13 @@ public class Laptop : MonoBehaviour
 
         playerMover.GetComponent<PlayerMovement>().canMove = false;
         mainCam.GetComponent<Interactor>().allowInteract = false;
+
+        //timeCounter = 0f;
+        //seconds = 0;
+        keepTime = true;
+
+
+        
         
         //Keypad.GetComponent<Keypad>().enabled = true;
 
@@ -59,7 +81,9 @@ public class Laptop : MonoBehaviour
         {
 
             //laptopOn = false;
+            //mainCam.enabled = true;
             LaptopCamera.enabled = false;
+            //timerCanvas.worldCamera = mainCam;
             //mainCam.enabled = true;
 
             crossHair.SetActive(true);
@@ -71,8 +95,43 @@ public class Laptop : MonoBehaviour
             playerMover.GetComponent<PlayerMovement>().canMove = true;
             mainCam.GetComponent<Interactor>().allowInteract = true;
 
+            //timer.SubtractTime(seconds - 1);
+            keepTime = false;
+
             
         }
+
+        if (keepTime == true)
+        {
+            timer.timeRemaining -= Time.deltaTime;
+
+            if (timer.timeRemaining <= 4 && timer.isPlayingFootsteps == false)
+            {
+                footsteps1.Play();
+                timer.isPlayingFootsteps = true;
+            }
+            
+
+            //timeCounter += Time.deltaTime;
+            
+            //seconds = Mathf.FloorToInt(timeCounter % 60);
+        }
+        if (timer.timeRemaining <= 10 && timer.isPlayingCountdown == false)
+        {
+            countdown1.Play();
+            timer.isPlayingCountdown = true;
+        }
+        if (timer.timeRemaining <= 0 && footsteps1.isPlaying == true)
+        {
+            footsteps1.Stop();
+                //doorOpen.Play();
+        }
+        if (timer.timeRemaining <= 0 && countdown1.isPlaying == true)
+        {
+            countdown1.Stop();
+                //doorOpen.Play();
+        }
+        
     }
 
   
