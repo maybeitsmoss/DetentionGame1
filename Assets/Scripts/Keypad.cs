@@ -11,6 +11,9 @@ public class Keypad : MonoBehaviour
    private string Answer = "6967";
 
    public GameObject drawer;
+   public AudioSource beep;
+   public AudioSource correct;
+   public AudioSource wrong;
    //make string public after testing + add a randomizer
 
 
@@ -23,7 +26,8 @@ public class Keypad : MonoBehaviour
     {
         if(Ans.text.Length < 4)
         {
-           Ans.text += number.ToString();
+            beep.Play();
+            Ans.text += number.ToString();
         }
     }
 
@@ -31,11 +35,13 @@ public class Keypad : MonoBehaviour
     {
         if (Ans.text == Answer)
         {
+            correct.Play();
            Ans.text = "UNLOCKED"; 
            drawer.GetComponent<drawers>().drawer2open();
         }
         else
         {
+            wrong.Play();
             Ans.text = "INVALID";
             StartCoroutine(KeypadReset());
         }

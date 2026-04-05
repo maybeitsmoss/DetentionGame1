@@ -30,6 +30,8 @@ public class SliddingDoorDrawersManager : MonoBehaviour
     [SerializeField] GameObject PrimaryDoor;
     [SerializeField] GameObject SecondaryDoor;
 
+    public AudioSource drawerOpen;
+
 
     float PrimaryDoorXAxis;
     float SecondaryDoorXAxis;
@@ -71,6 +73,7 @@ public class SliddingDoorDrawersManager : MonoBehaviour
 
     public void SetOpenDoor()
     {
+        drawerOpen.Play();
         OpenPrimaryDoor = true;
     }
 

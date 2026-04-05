@@ -29,6 +29,7 @@ public class Laptop : MonoBehaviour
 
     public AudioSource footsteps1;
     public AudioSource countdown1;
+    public AudioSource mouseClickSFX;
 
 
     //public Button exitButton;
@@ -44,6 +45,7 @@ public class Laptop : MonoBehaviour
 
      public void OnUnlock()
     {
+        mouseClickSFX.Play();
         laptopOn = true;
         Debug.Log("unlocked!!");
 

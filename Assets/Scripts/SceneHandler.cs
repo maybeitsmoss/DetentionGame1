@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 
 public class SceneHandler : MonoBehaviour
@@ -9,10 +10,19 @@ public class SceneHandler : MonoBehaviour
     public AudioSource music;
     public Canvas rulezCanvas;
     public Canvas menuCanvas;
+
+    public Canvas fader;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rulezCanvas.enabled = false;
+        StartCoroutine(FadeIn());
+    }
+
+    IEnumerator FadeIn()
+    {
+        yield return new WaitForSeconds(1);
+        fader.enabled = false;
     }
 
     public void StartGame()

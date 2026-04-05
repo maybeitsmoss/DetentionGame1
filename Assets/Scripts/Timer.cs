@@ -42,6 +42,7 @@ public class Timer : MonoBehaviour
         }
         if (timeRemaining <= 0)
         {
+            timerText.text = "00:00";
             footsteps.Stop();
             countdown.Stop();
             //doorOpen.Play();

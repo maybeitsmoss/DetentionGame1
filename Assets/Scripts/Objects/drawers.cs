@@ -13,6 +13,8 @@ public class drawers : MonoBehaviour
     public GameObject gun;
     public GameObject doorKey;
 
+    public AudioSource openDrawer;
+
     /*private bool open1 = false;
     private bool open2 = false;
     private bool open3 = false;
@@ -54,6 +56,7 @@ public class drawers : MonoBehaviour
             //open4 = false;
         }
 
+        openDrawer.Play();
         GetComponent<Animator>().SetTrigger("open");
         StartCoroutine(showUsb());
 
@@ -85,6 +88,7 @@ public class drawers : MonoBehaviour
             //open4 = false;
         }
 
+        openDrawer.Play();
         GetComponent<Animator>().SetTrigger("drawer2open");
         StartCoroutine(showGun());
         //open2 = true;
@@ -116,6 +120,7 @@ public class drawers : MonoBehaviour
             //open4 = false;
         }
 
+        openDrawer.Play();
         GetComponent<Animator>().SetTrigger("drawer3open");
         StartCoroutine(showDoorKey());
         //open3 = true;
@@ -147,6 +152,7 @@ public class drawers : MonoBehaviour
             //open3 = false;
         }
 
+        openDrawer.Play();
         GetComponent<Animator>().SetTrigger("drawer4open");
         //open4 = true;
     }

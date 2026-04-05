@@ -9,6 +9,8 @@ TagManager:
   - ground
   - Chair
   - Desk
+  - floor
+  - hand
   layers:
   - Default
   - TransparentFX
