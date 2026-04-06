@@ -28,6 +28,10 @@ public class Interactor : MonoBehaviour
     public GameObject laptop;
     public bool allowInteract = true;
 
+    private bool openedDrawer4 = false;
+
+    public AudioSource mismatchSFX;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -92,6 +96,7 @@ public class Interactor : MonoBehaviour
                         else
                         {
                             //incorrect!!
+                            mismatchSFX.Play();
                             Debug.Log("mismatch");
                         }
 
@@ -117,6 +122,15 @@ public class Interactor : MonoBehaviour
                     if (hitInfo1.collider.gameObject.name == "laptopOBJ" && laptop.GetComponent<Laptop>().laptopOn == true)
                     {
                         hitInfo1.collider.gameObject.GetComponent<database>().OnUnlockEvent.Invoke();
+                    }
+                }
+            
+            if (Physics.Raycast(InteractorSource.position, InteractorSource.forward, out RaycastHit hitInfo2, InteractRange))
+                {
+                    if (hitInfo2.collider.gameObject.name == "drawer4" && openedDrawer4 == false)
+                    {
+                        hitInfo2.collider.gameObject.GetComponent<database>().OnUnlockEvent.Invoke();
+                        openedDrawer4 = true;
                     }
                 }
             

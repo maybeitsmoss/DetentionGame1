@@ -16,7 +16,7 @@ public class basketball : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnCollisionEnter(Collision collision)
     {
-        if (bounceSound.isPlaying == false && timer.timeRemaining <= 55)
+        if (bounceSound.isPlaying == false && timer.timeRemaining <= 57)
         {
             float currentSpeed = rb.linearVelocity.magnitude;
             float volumeVel = Mathf.Clamp01(currentSpeed / maxSpeed);

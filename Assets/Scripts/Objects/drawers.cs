@@ -12,6 +12,7 @@ public class drawers : MonoBehaviour
     public GameObject usb;
     public GameObject gun;
     public GameObject doorKey;
+    public GameObject cellPhone;
 
     public AudioSource openDrawer;
 
@@ -25,9 +26,11 @@ public class drawers : MonoBehaviour
         usb.GetComponent<Rigidbody>().isKinematic = true;
         gun.GetComponent<Rigidbody>().isKinematic = true;
         doorKey.GetComponent<Rigidbody>().isKinematic = true;
+        cellPhone.GetComponent<Rigidbody>().isKinematic = true;
         usb.SetActive(false);
         gun.SetActive(false);
         doorKey.SetActive(false);
+        cellPhone.SetActive(false);
     }
 
     public void OnUnlock()
@@ -65,7 +68,7 @@ public class drawers : MonoBehaviour
 
     IEnumerator showUsb()
     {
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.7f);
         usb.SetActive(true);
         usb.GetComponent<Rigidbody>().isKinematic = false;
     }
@@ -96,7 +99,7 @@ public class drawers : MonoBehaviour
 
     IEnumerator showGun()
     {
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.7f);
 
         gun.SetActive(true);
         gun.GetComponent<Rigidbody>().isKinematic = false;
@@ -128,7 +131,7 @@ public class drawers : MonoBehaviour
 
     IEnumerator showDoorKey()
     {
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.7f);
 
         doorKey.SetActive(true);
         doorKey.GetComponent<Rigidbody>().isKinematic = false;
@@ -154,7 +157,17 @@ public class drawers : MonoBehaviour
 
         openDrawer.Play();
         GetComponent<Animator>().SetTrigger("drawer4open");
+        StartCoroutine(showCellPhone());
         //open4 = true;
+    }
+
+    IEnumerator showCellPhone()
+    {
+        yield return new WaitForSeconds(0.7f);
+        cellPhone.SetActive(true);
+        cellPhone.GetComponent<Rigidbody>().isKinematic = false;
+        //cellPhone.SetActive(true);
+        //cellPhone.GetComponent<Rigidbody>().isKinematic = false;
     }
 
 }

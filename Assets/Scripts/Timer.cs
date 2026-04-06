@@ -16,6 +16,8 @@ public class Timer : MonoBehaviour
     public AudioSource countdown;
     public bool isPlayingCountdown = false;
 
+    public keyObj cellPhone;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
 
@@ -42,6 +44,10 @@ public class Timer : MonoBehaviour
         }
         if (timeRemaining <= 0)
         {
+            if (cellPhone.phoneMessage.isPlaying == true)
+            {
+                cellPhone.phoneMessage.Stop();
+            }
             timerText.text = "00:00";
             footsteps.Stop();
             countdown.Stop();
