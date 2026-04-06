@@ -20,6 +20,7 @@ public class RollingSFX : MonoBehaviour
             if (!rollingSound.isPlaying)
             {
                 rollingSound.Play();
+                Debug.Log(rb.linearVelocity.magnitude);
             }
             rollingSound.volume = Mathf.Clamp01(currentSpeed / maxSpeed);
         }

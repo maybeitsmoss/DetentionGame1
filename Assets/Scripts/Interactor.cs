@@ -99,11 +99,20 @@ public class Interactor : MonoBehaviour
                             mismatchSFX.Play();
                             Debug.Log("mismatch");
                         }
+                        
 
 
                         
                     }
+                    else if (hitInfo.collider.gameObject.tag != "lock")
+                    {
+                        lastObjectPicked.GetComponent<keyObj>().Drop();
+                        lastObjectPicked = null;
+                        currentKeyType = UnlockableObjects.none;
+                        canPick = true;
+                    }
                 }
+                
                 else
                 {
                     if (lastObjectPicked != null)
